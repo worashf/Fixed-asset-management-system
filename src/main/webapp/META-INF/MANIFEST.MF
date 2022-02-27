@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Ams
+Implementation-Version: 1.0
+Built-By: uppert
+Specification-Title: Ams
+Implementation-Vendor-Id: com.zema
+Created-By: Apache Maven 3.6.2
+Build-Jdk: 1.8.0_221
+Specification-Version: 1.0
+

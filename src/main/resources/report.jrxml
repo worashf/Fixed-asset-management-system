@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="66a7123c-e05a-4b66-aef8-1e6a06745224">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="336"/>
+	<property name="ireport.y" value="136"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="FirstName" class="java.lang.String"/>
+	<field name="MiddleName" class="java.lang.String"/>
+	<field name="EmployeeCode" class="java.lang.String"/>
+	<field name="AssetCode" class="java.lang.String"/>
+	<field name="CategoryName" class="java.lang.String"/>
+	<field name="DepartmentName" class="java.lang.String"/>
+	<field name="count" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="62" backcolor="#9999FF" uuid="f07962ee-40b1-46ce-bf65-37ba3ccc29df"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Assigned Asset List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="13" width="100" height="20" uuid="dae19939-9136-4b22-8051-0eb4c6f0923f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[   የስራ ክፍል፦]]></text>
+			</staticText>
+			<line>
+				<reportElement x="113" y="32" width="100" height="1" uuid="843d5d7d-dcb6-4fd5-ade2-28288a8cb835"/>
+			</line>
+			<textField>
+				<reportElement x="113" y="12" width="100" height="20" uuid="76055505-dbc0-4191-8bdd-ab95018acb0d"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DepartmentName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="356" y="13" width="100" height="20" uuid="2a7d02ac-6b06-4535-b1b6-cc5bc4891947"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[የንብረት ብዛት፦]]></text>
+			</staticText>
+			<line>
+				<reportElement x="456" y="28" width="100" height="1" uuid="a59a2305-5d10-4a8a-b029-eb01facdbfe2"/>
+			</line>
+			<textField>
+				<reportElement x="456" y="14" width="100" height="14" uuid="01df3966-2c3d-486d-b9d8-117c567f371d"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{count}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="23" width="74" height="20" uuid="ef49016a-bbdc-42ef-860f-e0a28d1b9f46"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ስም]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="23" width="106" height="20" uuid="6e1ea6b0-c155-4cd8-bd60-146a28743315"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[የአባት ስም]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="23" width="76" height="20" uuid="ce684939-db0d-4f47-b286-5bbeba65e491"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[የመ/ቁ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="23" width="186" height="20" uuid="65fa13d7-8859-46ee-b1e2-9b40813fa01e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[የንብረት መለያ ቁጥር]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="23" width="113" height="20" uuid="39d47bd0-504a-4dba-ab04-878ae089c0e6"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[የንብረት አይነት]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="0" width="76" height="30" uuid="19296907-3f3d-4c6a-8b70-0fe63685a582"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EmployeeCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="186" height="30" uuid="f0e66d5e-3009-4054-938b-fc2d5c2d8c41"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AssetCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="0" width="113" height="30" uuid="d03fda5f-6598-4003-85cb-40bb1294177b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CategoryName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="0" width="106" height="30" uuid="c42280ef-983f-499d-bdc4-a4ecb83f87a4"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MiddleName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="74" height="30" uuid="2eb94bab-1ddc-4ad7-b7fc-3972d84f99dc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirstName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

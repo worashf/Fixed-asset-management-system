@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="assignedAsset" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="02d1f994-8423-47ef-bff7-23de5e613de2">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="79" forecolor="#00CCCC" backcolor="#CCCCCC" uuid="3cbf029d-c88d-44a2-8bb7-acc5e4e1a72a"/>
+				<staticText>
+					<reportElement x="0" y="0" width="294" height="62" forecolor="#006666" backcolor="#3366FF" uuid="6bc0494b-33c3-4a38-aadd-5b08fd4792a8"/>
+					<textElement textAlignment="Center">
+						<font fontName="Times New Roman" size="24" isBold="true" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Assigned Asset to Employee]]></text>
+				</staticText>
+				<image>
+					<reportElement x="310" y="0" width="133" height="52" uuid="9bf9566b-cae8-4cdb-a635-e419438cbb66"/>
+					<imageExpression><![CDATA["D:\\projectSpace\\Isms\\Isms\\src\\main\\resources\\csc_logo.jpg"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="29" width="80" height="20" forecolor="#000033" backcolor="#330033" uuid="f69caccb-6c42-4019-81b4-ef97c67b48e9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="29" width="80" height="20" uuid="d88784ce-ea7d-4650-bbd5-f18900e36bb1"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Middle Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="29" width="80" height="20" uuid="716f1e92-86a7-4517-9836-33af0a58db5c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="29" width="93" height="20" uuid="35c75ef9-920c-44a2-914d-165d8a81b4ed"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Employee Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="29" width="80" height="20" uuid="cadcb463-97de-493f-a5d9-a4be07a5dfdc"/>
+				<textElement textAlignment="Center">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Asset Code]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+		<band height="50"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+
+  
+}
+
+.pagination a {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 2px solid  #b3daff;
+  
+  
+}
+
+.pagination a.active {
+  background-color:  #8c8c8c;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
